@@ -4,7 +4,10 @@ body { overflow-x: hidden; }
 .hero-grid {
   background-image:
     linear-gradient(90deg, rgba(7, 27, 50, 0.96) 0%, rgba(7, 27, 50, 0.86) 46%, rgba(7, 27, 50, 0.40) 100%),
-    url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=2000&q=85');
+    url('https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg'),
+    url('https://images.pexels.com/photos/11053643/pexels-photo-11053643.jpeg'),
+    url('https://images.pexels.com/photos/9749472/pexels-photo-9749472.jpeg'),
+    url('https://images.pexels.com/photos/30858911/pexels-photo-30858911.jpeg');
   background-position: center;
   background-size: cover;
 }

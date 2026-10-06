@@ -125,3 +125,18 @@ if (trackingForm && trackingInput && trackingResult) {
     trackingResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
 }
+
+const commonDomains = ['gmail.com', 'yahoo.com', 'outlook.com', 'icloud.com', 'hotmail.com'];
+
+function validateEmail(email) {
+  const basicCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if (!basicCheck) return { valid: false, message: "Please enter a valid email address." };
+  
+  // Optional: Check for common typos in domain names
+  const domain = email.split('@')[1].toLowerCase();
+  if (domain === 'gmai.com' || domain === 'gmal.com') {
+    return { valid: false, message: "Did you mean gmail.com?" };
+  }
+  
+  return { valid: true };
+}

@@ -3,51 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khomas Freight Services provides reliable regional and international freight forwarding, customs documentation, and supply chain support from Windhoek, Namibia.">
-  <meta name="theme-color" content="#071b32">
-  <title>Khomas Freight Services | Freight & Logistics</title>
+  <meta name="description" content="Khomas Freight Services — Namibia's customs clearing and dangerous goods freight specialists. Regional and international forwarding from Windhoek.">
+  <meta name="theme-color" content="#06172b">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Khomas Freight Services | Customs & DG Freight Specialists">
+  <meta property="og:description" content="Seamless regional and international import/export management, customs documentation, and supply chain support from Windhoek, Namibia.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://khomasfreight.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Khomas Freight Services</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            navy: {
-              950: '#071b32',
-              900: '#0b2947',
-              800: '#123a62',
-              700: '#1e527f'
-            },
-            orange: {
-              50: '#fff7ed',
-              400: '#fb923c',
-              500: '#f97316',
-              600: '#ea580c'
-            }
+            navy: { 950: '#06172b', 900: '#0a2440', 800: '#123a62', 700: '#1e527f' },
+            ember: { DEFAULT: '#e05a47', 500: '#d04936', 600: '#c44a38', 700: '#a63c2c' },
+            paper: '#faf8f5',
+            ink:   '#0f172a'
           },
           fontFamily: {
-            sans: ['Inter', 'sans-serif']
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif']
           },
           boxShadow: {
-            soft: '0 20px 50px rgba(7, 27, 50, 0.10)',
-            card: '0 12px 35px rgba(7, 27, 50, 0.08)'
+            card: '0 1px 2px rgba(15,23,42,.04), 0 8px 24px -16px rgba(15,23,42,.12)',
+            soft: '0 24px 60px -24px rgba(6,23,43,.25)'
           }
         }
       }
     };
   </script>
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "Khomas Freight Services",
+    "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80",
+    "@id": "https://khomasfreight.com",
+    "url": "https://khomasfreight.com",
+    "telephone": "+264-61-000-0000",
+    "email": "info@khomasfreight.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Windhoek",
+      "addressLocality": "Windhoek",
+      "addressCountry": "NA"
+    },
+    "areaServed": ["NA","ZA","BW","ZM","AO"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00", "closes": "17:00"
+    }]
+  }
+  </script>
 </head>
-<body class="min-h-screen bg-white font-sans text-slate-700 antialiased">
+
+<body class="min-h-screen bg-white font-sans text-ink/80 antialiased">
+
+  <a href="#services" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-navy-950 focus:px-4 focus:py-2 focus:text-sm focus:text-white">Skip to content</a>
+
+  <!-- ======================= HEADER ======================= -->
   <header id="home" class="absolute inset-x-0 top-0 z-50">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
       <!-- Brand -->
-      <a href="#home" class="flex items-center gap-3" aria-label="Khomas Freight Services home">
-        <span class="grid h-11 w-11 place-items-center rounded-xl bg-orange-500 shadow-lg shadow-orange-500/20">
+      <a href="#home" class="group flex items-center gap-3" aria-label="Khomas Freight Services home">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-ember shadow-lg shadow-ember/25 transition group-hover:scale-[1.03]">
           <svg class="h-7 w-7 text-white" viewBox="0 0 32 32" fill="none" aria-hidden="true">
             <path d="M5 19.5h22M8 19.5l2.7-7h10.6l2.7 7M11 19.5v5m10-5v5M9 24.5h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M14 12.5 16 8l2 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -55,310 +88,534 @@
         </span>
         <span class="leading-tight text-white">
           <strong class="block text-[15px] font-extrabold tracking-wide">KHOMAS</strong>
-          <span class="block text-[9px] font-semibold uppercase tracking-[0.22em] text-orange-400">Freight Services</span>
+          <span class="block text-[9px] font-semibold uppercase tracking-[0.22em] text-ember">Freight Services</span>
         </span>
       </a>
 
-      <!-- Desktop navigation -->
-      <nav class="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
-        <a href="#home" class="text-sm font-medium text-white transition hover:text-orange-400">Home</a>
-        <a href="#services" class="text-sm font-medium text-white transition hover:text-orange-400">Services</a>
-        <a href="#about" class="text-sm font-medium text-white transition hover:text-orange-400">About</a>
-        <a href="#lanes" class="text-sm font-medium text-white transition hover:text-orange-400">Import/Export Lanes</a>
-        <a href="#contact" class="text-sm font-medium text-white transition hover:text-orange-400">Contact</a>
+      <!-- Desktop nav -->
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Primary navigation">
+        <a href="#home"     class="nav-link text-sm font-medium text-white/90 transition hover:text-white">Home</a>
+        <a href="#services" class="nav-link text-sm font-medium text-white/90 transition hover:text-white">Services</a>
+        <a href="#about"    class="nav-link text-sm font-medium text-white/90 transition hover:text-white">About</a>
+        <a href="#lanes"    class="nav-link text-sm font-medium text-white/90 transition hover:text-white">Lanes</a>
+        <a href="#contact"  class="nav-link text-sm font-medium text-white/90 transition hover:text-white">Contact</a>
       </nav>
 
       <div class="hidden md:block">
-        <a href="#quote" class="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:-translate-y-0.5 hover:bg-orange-600">
+        <a href="#quote" class="btn btn-primary">
           Request a Quote
-          <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
 
-      <!-- Mobile menu button -->
-      <button id="menuButton" type="button" class="grid h-11 w-11 place-items-center rounded-lg border border-white/20 bg-white/10 text-white md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
-        <svg id="menuIcon" class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <!-- Mobile toggle -->
+      <button id="menuButton" type="button" class="grid h-11 w-11 place-items-center rounded-lg border border-white/20 bg-white/10 text-white backdrop-blur transition hover:bg-white/15 md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg id="menuIcon" class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
       </button>
     </div>
 
+    <!-- Mobile nav -->
     <nav id="mobileMenu" class="mobile-menu mx-5 rounded-2xl border border-white/10 bg-navy-950/95 p-4 shadow-2xl backdrop-blur md:hidden" aria-label="Mobile navigation">
       <div class="flex flex-col gap-1">
-        <a href="#home" class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Home</a>
+        <a href="#home"     class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Home</a>
         <a href="#services" class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Services</a>
-        <a href="#about" class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">About</a>
-        <a href="#lanes" class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Import/Export Lanes</a>
-        <a href="#contact" class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Contact</a>
-        <a href="#quote" class="mobile-link mt-2 rounded-lg bg-orange-500 px-4 py-3 text-center text-sm font-bold text-white">Request a Quote</a>
+        <a href="#about"    class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">About</a>
+        <a href="#lanes"    class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Lanes</a>
+        <a href="#contact"  class="mobile-link rounded-lg px-4 py-3 text-sm font-medium text-white hover:bg-white/10">Contact</a>
+        <a href="#quote"    class="mobile-link mt-2 rounded-lg bg-ember px-4 py-3 text-center text-sm font-bold text-white">Request a Quote</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero-grid relative flex flex-col justify-between overflow-hidden pt-28 text-white lg:pt-36 pb-12">
-      <div class="absolute -left-32 top-36 h-96 w-96 rounded-full bg-orange-500/20 blur-3xl"></div>
-      <div class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl"></div>
-      
-      <div class="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 w-full">
-        <div class="max-w-4xl">
-          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-orange-400 backdrop-blur">
-            <span class="h-2 w-2 rounded-full bg-orange-400 shadow-[0_0_0_5px_rgba(251,146,60,.2)]"></span>
-            Logistics that moves with you
-          </div>
-          <h1 class="text-3xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-            Reliable Freight &amp; Logistics Solutions <span class="text-orange-400">Across Namibia and South Africa.</span>
-          </h1>
-          <p class="mt-4 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base">
-            Seamless regional and international import/export management, customs documentation, and supply chain support—delivered with clarity from origin to destination.
-          </p>
-          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-            <a href="#quote" class="inline-flex items-center justify-center gap-2 rounded-lg bg-orange-500 px-6 py-3.5 text-sm font-bold text-white shadow-xl shadow-orange-500/20 transition hover:-translate-y-0.5 hover:bg-orange-600">
-              Get a Quick Quote
-              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="#services" class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur transition hover:bg-white hover:text-navy-900">
-              Our Services
-            </a>
-          </div>
+    <!-- ======================= HERO ======================= -->
+   <section class="relative overflow-hidden bg-slate-900 pt-16 pb-24 lg:pt-24 lg:pb-32">
+  <!-- Background gradient/effects -->
+  <div class="absolute inset-0 opacity-20">
+    <div class="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-blue-500 blur-3xl"></div>
+    <div class="absolute top-60 -left-20 h-80 w-80 rounded-full bg-indigo-600 blur-3xl"></div>
+  </div>
 
-          <div class="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-white/15 pt-5 text-sm text-slate-300">
-            <div class="flex items-center gap-3">
-              <span class="grid h-8 w-8 place-items-center rounded-lg bg-white/10 text-orange-400"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span>
-              <span><strong class="block text-white text-xs">Windhoek, Namibia</strong><span class="text-xs">Local expertise &amp; national reach</span></span>
+  <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8 items-center">
+      
+      <!-- Left Column: Hero Text & CTA -->
+      <div class="lg:col-span-7">
+        <span class="inline-flex items-center gap-x-1.5 rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-400 ring-1 ring-inset ring-blue-500/20 mb-6">
+          <svg class="h-1.5 w-1.5 fill-blue-400" viewBox="0 0 6 6" aria-hidden="true"><circle cx="3" cy="3" r="3"/></svg>
+          Reliable Freight & Logistics Solutions
+        </span>
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          Reliable Cargo Solutions Across Borders
+        </h1>
+        <p class="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+          Seamless regional and international freight forwarding, customs clearance, and dangerous goods management centered from Windhoek, Namibia.
+        </p>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a href="#tracking" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            Track Shipment
+          </a>
+          <a href="#contact" class="text-sm font-semibold leading-6 text-white hover:text-blue-400">
+            Request a Quote <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Quick Shipment Lookup Widget -->
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl bg-slate-800/80 p-6 ring-1 ring-white/10 shadow-2xl backdrop-blur-sm">
+          <h3 class="text-lg font-medium text-white mb-4">Quick Shipment Lookup</h3>
+          <div class="space-y-4">
+            <div>
+              <label for="tracking-input" class="block text-xs font-medium text-slate-300 mb-1">Waybill or Tracking Number</label>
+              <input type="text" id="tracking-input" placeholder="e.g. S9D-2026-8492" class="w-full rounded-md bg-slate-900 border border-slate-700 px-3 py-2 text-sm text-white placeholder-slate-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500">
             </div>
-            <div class="flex items-center gap-3">
-              <span class="grid h-8 w-8 place-items-center rounded-lg bg-white/10 text-orange-400"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 17h18M6 17V8l6-4 6 4v9M8 17v-4h8v4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
-              <span><strong class="block text-white text-xs">Built for the region</strong><span class="text-xs">Cross-border capability</span></span>
-            </div>
+            <button type="button" class="w-full rounded-md bg-blue-600 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-500 transition-colors">
+              Check Status
+            </button>
           </div>
         </div>
-
-        <aside class="mt-8 max-w-md rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur-xl sm:p-5" aria-label="Company highlights">
-          <div class="grid grid-cols-3 gap-4 text-center">
-            <div><strong class="block text-xl font-extrabold text-white">End-to-end</strong><span class="mt-0.5 block text-[10px] uppercase tracking-wider text-slate-400">Logistics</span></div>
-            <div class="border-x border-white/15"><strong class="block text-xl font-extrabold text-white">Clear</strong><span class="mt-0.5 block text-[10px] uppercase tracking-wider text-slate-400">Documentation</span></div>
-            <div><strong class="block text-xl font-extrabold text-white">Regional</strong><span class="mt-0.5 block text-[10px] uppercase tracking-wider text-slate-400">Expertise</span></div>
-          </div>
-        </aside>
       </div>
-      
-      <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500"></div>
+
+    </div>
+  </div>
+</section> 
+
+    <!-- ======================= PROOF BAND ======================= -->
+    <section class="border-b border-slate-200 bg-white py-10">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-5 sm:grid-cols-4 lg:px-8">
+        <div>
+          <div class="h-display text-3xl text-ink sm:text-4xl">20+</div>
+          <div class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-slate-500">Years operating</div>
+        </div>
+        <div>
+          <div class="h-display text-3xl text-ink sm:text-4xl">14</div>
+          <div class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-slate-500">SADC border posts</div>
+        </div>
+        <div>
+          <div class="h-display text-3xl text-ink sm:text-4xl">24/7</div>
+          <div class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-slate-500">Operations desk</div>
+        </div>
+        <div>
+          <div class="h-display text-3xl text-ink sm:text-4xl">100%</div>
+          <div class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-slate-500">DG-certified staff</div>
+        </div>
+      </div>
     </section>
 
-    <!-- Shipment Tracking Lookup Component -->
-    <section class="relative z-20 -mt-6 mx-auto max-w-7xl px-5 lg:px-8">
-      <div class="rounded-2xl bg-navy-900 border border-white/10 p-6 shadow-2xl backdrop-blur sm:p-8">
-        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+    <!-- ======================= TRACKING ======================= -->
+    <section id="tracking" class="relative z-20 mx-auto -mt-8 max-w-7xl px-5 lg:px-8">
+      <div class="rounded-2xl border border-white/10 bg-navy-900 p-6 shadow-2xl backdrop-blur sm:p-8">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h3 class="text-xl font-bold text-white">Track Your Consignment</h3>
-            <p class="text-sm text-slate-300 mt-1">Enter your tracking reference to check real-time status updates.</p>
+            <h3 class="h-display text-xl text-white">Track your consignment</h3>
+            <p class="mt-1 text-sm text-slate-300">Enter your reference to see live status and milestone updates.</p>
           </div>
-          <form id="trackingForm" class="flex flex-col sm:flex-row gap-3 lg:w-1/2">
+          <form id="trackingForm" class="flex flex-col gap-3 sm:flex-row lg:w-1/2" novalidate>
             <div class="relative flex-grow">
-              <input id="trackingInput" type="text" required placeholder="e.g. KFS-2026-9842" class="w-full rounded-lg border border-slate-700 bg-navy-950 px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-orange-500 focus:ring-4 focus:ring-orange-500/10">
+              <input id="trackingInput" type="text" required placeholder="e.g. KFS-2026-9842"
+                     class="w-full rounded-lg border border-slate-700 bg-navy-950 px-4 py-3.5 font-mono text-sm text-white outline-none transition placeholder:font-sans placeholder:text-slate-500 focus:border-ember focus:ring-4 focus:ring-ember/15">
             </div>
-            <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-lg bg-orange-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:bg-orange-600">
-              Track Cargo
+            <button type="submit" class="btn btn-primary" data-track-btn>
+              <span class="btn-label">Track Cargo</span>
+              <svg class="btn-spinner hidden h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-opacity=".25" stroke-width="3"/><path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
             </button>
           </form>
         </div>
-        <!-- Tracking Result Box (Dynamic) -->
-        <div id="trackingResult" class="hidden mt-6 rounded-xl border border-white/10 bg-navy-950 p-5 text-sm text-slate-300">
-          <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
-            <div><strong class="text-white">Ref:</strong> <span id="resRef" class="text-orange-400 font-mono"></span></div>
-            <div><strong class="text-white">Status:</strong> <span id="resStatus" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">In Transit</span></div>
-          </div>
-          <div class="grid sm:grid-cols-3 gap-4 text-xs">
-            <div><span class="text-slate-500 block uppercase">Origin</span> <span id="resOrigin" class="text-white font-medium">Johannesburg, ZA</span></div>
-            <div><span class="text-slate-500 block uppercase">Destination</span> <span id="resDest" class="text-white font-medium">Windhoek, NA</span></div>
-            <div><span class="text-slate-500 block uppercase">Estimated Delivery</span> <span id="resEta" class="text-white font-medium">Tomorrow, 16:00</span></div>
-          </div>
+
+        <!-- Skeleton -->
+        <div id="trackingSkeleton" class="mt-6 hidden animate-pulse space-y-3 rounded-xl border border-white/10 bg-navy-950 p-5">
+          <div class="h-3 w-1/3 rounded bg-white/10"></div>
+          <div class="h-3 w-2/3 rounded bg-white/10"></div>
+          <div class="h-3 w-1/2 rounded bg-white/10"></div>
+        </div>
+
+        <!-- Result -->
+        <div id="trackingResult" class="mt-6 hidden rounded-xl border border-white/10 bg-navy-950 p-5 text-sm text-slate-300"></div>
+      </div>
+    </section>
+
+    <!-- ======================= PARTNER STRIP ======================= -->
+    <section class="border-b border-slate-200 bg-paper py-10">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Trusted partners &amp; accreditations</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-70 transition hover:opacity-100">
+          <span class="text-lg font-bold tracking-tight text-slate-700">NamRA</span>
+          <span class="text-lg font-bold tracking-tight text-slate-700">IATA</span>
+          <span class="text-lg font-bold tracking-tight text-slate-700">FIATA</span>
+          <span class="text-lg font-bold tracking-tight text-slate-700">SADC</span>
+          <span class="text-lg font-bold tracking-tight text-slate-700">NCCI</span>
         </div>
       </div>
     </section>
 
-    <!-- Expanded Services Section (6 Items) -->
-    <section id="services" class="scroll-mt-20 bg-slate-50 py-24 sm:py-28">
+    <!-- ======================= SERVICES ======================= -->
+   <section id="services" class="scroll-mt-20 bg-white py-24 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 lg:px-8">
         <div class="grid gap-7 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
           <div class="fade-up">
-            <p class="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-orange-600">What we do</p>
-            <h2 class="text-3xl font-extrabold tracking-tight text-navy-950 sm:text-4xl">Comprehensive freight solutions engineered for the region.</h2>
+            <p class="eyebrow">What we do</p>
+            <h2 class="h-display h-display--lg mt-3 text-ink">Specialist freight, engineered for the region.</h2>
           </div>
-          <p class="fade-up text-base leading-7 text-slate-600 lg:justify-self-end lg:text-lg">From cross-border Full Truck Loads (FTL) and customs brokerage to specialized warehousing and air freight support, we manage your supply chain end-to-end.</p>
+          <p class="fade-up max-w-2xl text-base leading-7 text-ink/70 lg:justify-self-end lg:text-lg">
+            We lead with what we do best — <strong class="text-ink">customs clearing and dangerous goods</strong> — and extend into the logistics that surround them.
+          </p>
         </div>
 
-        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Service 1 -->
-          <article class="service-card fade-up rounded-2xl border border-slate-200 bg-white p-6">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-orange-50 text-orange-600">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3V7Zm11 3h4l3 3v4h-7v-7ZM7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <!-- 2-Column Grid with 4 cards each -->
+        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+          
+          <!-- Card 1: Customs Clearing & Forwarding -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-ember/10 text-ember">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
-            <h3 class="mt-6 text-lg font-bold text-navy-950">Cross-Border FTL &amp; LTL</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Reliable Full Truck Load and Less-than-Truckload services connecting major industrial hubs across South Africa and Namibia.</p>
-            <a href="#quote" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600">Book transit <span aria-hidden="true">→</span></a>
+            <h3 class="mt-6 text-lg font-bold text-ink">Customs Clearing &amp; Forwarding</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Expert management of import and export documentation, ensuring seamless customs clearance across sea, air, and land borders while maintaining full regulatory compliance.</p>
+            <a href="#quote" class="link-arrow mt-5">Book transit</a>
+          </article> 
+
+          <!-- Card 2: Aircraft on Ground (AOG) Logistics -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-rose-50 text-rose-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-6 text-lg font-bold text-ink">Aircraft on Ground (AOG) Logistics</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Rapid-response logistics services for urgent aircraft parts and components, minimizing downtime through 24/7 operational support and real-time shipment tracking.</p>
+            <a href="#quote" class="link-arrow mt-5">Learn more</a>
           </article>
 
-          <!-- Service 2 -->
-          <article class="service-card fade-up rounded-2xl border border-slate-200 bg-white p-6">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-blue-50 text-blue-600">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M6 3h12v18H6V3Zm3 4h6M9 11h6m-6 4h6M9 18h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <!-- Card 3: High-Value Shipment -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-amber-50 text-amber-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M6 3h12l4 6-10 13L2 9l4-6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2 9h20M10 3v19M14 3v19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
-            <h3 class="mt-6 text-lg font-bold text-navy-950">Customs Brokerage</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Expert clearance handling, tariff classification, and documentation compliance to prevent border bottlenecks.</p>
-            <a href="#quote" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600">Clear cargo <span aria-hidden="true">→</span></a>
+            <h3 class="mt-6 text-lg font-bold text-ink">High-Value Shipment</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Secure transportation of sensitive and high-worth cargo with advanced tracking, controlled access procedures, and comprehensive risk management.</p>
+            <a href="#quote" class="link-arrow mt-5">Talk to a specialist</a>
+          </article> 
+
+          <!-- Card 4: Ship Spares Logistics -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-blue-50 text-blue-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M3 16h18l-2 4H5l-2-4ZM12 2v8m0 0l4-4m-4 4L8 6m-5 9c2 2 4 3 9 3s7-1 9-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-6 text-lg font-bold text-ink">Ship Spares Logistics</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Time-critical delivery of marine parts and ship spares directly to vessels, supported by customs expertise and coordination with ports and maritime agents.</p>
+            <a href="#quote" class="link-arrow mt-5">Clear cargo</a>
+          </article> 
+
+          <!-- Card 5: Dangerous Goods Transport -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-violet-50 text-violet-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M5.07 19h13.86c1.54 0 2.5-1.67 1.73-3L13.73 4c-.77-1.33-2.69-1.33-3.46 0L3.34 16c-.77 1.33.19 3 1.73 3Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-6 text-lg font-bold text-ink">Dangerous Goods Transport</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Certified handling and transportation of hazardous materials in strict accordance with IATA, IMDG, and other international safety regulations.</p>
+            <a href="#quote" class="link-arrow mt-5">Request service</a>
+          </article> 
+
+          <!-- Card 6: Courier Services -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-cyan-50 text-cyan-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="5.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="1.7"/><circle cx="18.5" cy="18.5" r="2.5" stroke="currentColor" stroke-width="1.7"/></svg>
+            </span>
+            <h3 class="mt-6 text-lg font-bold text-ink">Courier Services</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Reliable domestic and international courier solutions offering express delivery, proof of delivery, and real-time shipment visibility.</p>
+            <a href="#quote" class="link-arrow mt-5">Get custom plan</a>
+          </article> 
+
+          <!-- Card 7: Live Animal Movements -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-emerald-50 text-emerald-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M12 11c-2 0-3.5 1.5-3.5 3.5S10 18 12 18s3.5-1.5 3.5-3.5S14 11 12 11ZM6.5 8C5.1 8 4 9.1 4 10.5S5.1 13 6.5 13 9 11.9 9 10.5 7.9 8 6.5 8ZM17.5 8c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5S18.9 8 17.5 8ZM8 5c-.8 0-1.5.7-1.5 1.5S7.2 8 8 8s1.5-.7 1.5-1.5S8.8 5 8 5ZM16 5c-.8 0-1.5.7-1.5 1.5S15.2 8 16 8s1.5-.7 1.5-1.5S16.8 5 16 5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-6 text-lg font-bold text-ink">Live Animal Movements</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Specialized logistics solutions for livestock and exotic animals, ensuring welfare-compliant transportation and coordination with veterinary and quarantine authorities.</p>
+            <a href="#quote" class="link-arrow mt-5">Request service</a>
+          </article> 
+
+          <!-- Card 8: Tailored Logistics Solutions -->
+          <article class="service-card fade-up">
+            <span class="service-card__icon grid h-12 w-12 place-items-center rounded-xl bg-indigo-50 text-indigo-600">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-6 text-lg font-bold text-ink">Tailored Logistics Solutions</h3>
+            <p class="mt-3 text-sm leading-6 text-ink/70">Customized end-to-end logistics services including warehousing, freight consolidation, supply chain management, and operational efficiency consulting.</p>
+            <a href="#quote" class="link-arrow mt-5">Request service</a>
           </article>
 
-          <!-- Service 3 -->
-          <article class="service-card fade-up rounded-2xl border border-slate-200 bg-white p-6">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-emerald-50 text-emerald-600">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M2 12h20M12 2v20" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            </span>
-            <h3 class="mt-6 text-lg font-bold text-navy-950">Air Freight Forwarding</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Time-sensitive express air cargo coordination for urgent spare parts, medical shipments, and high-value goods.</p>
-            <a href="#quote" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600">Ship via air <span aria-hidden="true">→</span></a>
-          </article>
-
-          <!-- Service 4 -->
-          <article class="service-card fade-up rounded-2xl border border-slate-200 bg-white p-6">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-violet-50 text-violet-600">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M6 7v11h12V7M9 11h6m-6 4h6M8 4h8v3H8V4Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-            <h3 class="mt-6 text-lg font-bold text-navy-950">Warehousing &amp; Storage</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Secure short and long-term storage solutions based strategically in Windhoek for efficient local distribution.</p>
-            <a href="#about" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600">View facilities <span aria-hidden="true">→</span></a>
-          </article>
-
-          <!-- Service 5 -->
-          <article class="service-card fade-up rounded-2xl border border-slate-200 bg-white p-6">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-amber-50 text-amber-600">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-            <h3 class="mt-6 text-lg font-bold text-navy-950">Procurement Logistics</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Comprehensive supply chain synchronization supporting industrial procurement and project cargo management.</p>
-            <a href="#quote" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600">Learn more <span aria-hidden="true">→</span></a>
-          </article>
-
-          <!-- Service 6 -->
-          <article class="service-card fade-up rounded-2xl border border-slate-200 bg-white p-6">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-cyan-50 text-cyan-600">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </span>
-            <h3 class="mt-6 text-lg font-bold text-navy-950">Abnormal &amp; Heavy Haul</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Specialized transport handling for oversized mining, construction, and agricultural machinery across the corridor.</p>
-            <a href="#quote" class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600">Request heavy lift <span aria-hidden="true">→</span></a>
-          </article>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ======================= SPOTLIGHT: OIL & GAS / DG ======================= -->
+   <section class="bg-paper py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="mx-auto max-w-2xl text-center mb-16">
+      <span class="text-xs font-bold uppercase tracking-widest text-ember bg-ember/10 px-3 py-1 rounded-full">Specialized Divisions</span>
+      <h2 class="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl h-display">
+        Industry-Leading Technical Logistics
+      </h2>
+      <p class="mt-4 text-base text-ink/70">
+        Mission-critical handling for high-compliance sectors, backed by certified expertise and rigorous safety standards.
+      </p>
+    </div>
+
+    <!-- Symmetrical Alternating Grid -->
+    <div class="grid gap-12 lg:grid-cols-12 items-center">
+      
+      <!-- Row 1, Left: Oil & Gas Card (Span 7) -->
+      <article class="spotlight fade-up relative flex flex-col justify-between rounded-2xl bg-white p-8 lg:p-10 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-md lg:col-span-7">
+        <div class="absolute top-0 left-8 right-8 h-1 bg-amber-500 rounded-t-xl"></div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-amber-50 text-amber-600 ring-1 ring-amber-500/20">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none"><path d="M12 2v20m5-17H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="badge badge-ember text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-700">Sector Specialist</span>
+          </div>
+          <h3 class="mt-8 text-2xl font-semibold tracking-tight text-ink h-display">Oil &amp; Gas Logistics Solutions</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink/70">Comprehensive logistics for Namibia's expanding oil and gas sector — from exploration and drilling support to production and maintenance activities.</p>
+          
+          <div class="mt-8 border-t border-slate-100 pt-6">
+            <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Core Capabilities</h4>
+            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-ink/80">
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Project Cargo Management</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Customs Clearing &amp; Forwarding</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Import &amp; Export Logistics</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Warehousing &amp; Inventory Support</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Vessel &amp; Aircraft Logistics</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Offshore &amp; Onshore Deliveries</li>
+              <li class="flex items-center gap-2 sm:col-span-2"><span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span> Time-Critical Freight Solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-4">
+          <a href="#quote" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-600 hover:text-amber-700 transition-colors">
+            Inquire about Oil &amp; Gas <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>  
+
+      <!-- Row 1, Right: Oil & Gas Image Container (Span 5) -->
+      <div class="lg:col-span-5 h-[520px] relative rounded-2xl overflow-hidden shadow-sm ring-1 ring-slate-200 bg-slate-900 hidden lg:block">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRbcWAXpk7Z4DsOOPAS6BFRqyA0p9pbJlnx4EMqVrNxuWDIpLL3nIpWFjUmCamXqtL-bgGwsZ50rbJlN6E" alt="Offshore supply vessel and operations" class="absolute inset-0 h-full w-full object-cover object-center opacity-90 transition-transform duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-white">
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">Walvis Bay Hub</span>
+          <p class="text-lg font-medium mt-1">Powering energy exploration &amp; maritime supply chains across Southern Africa.</p>
+        </div>
+      </div>
+
+      <!-- Row 2, Left: Dangerous Goods Image Container (Span 5) -->
+      <div class="lg:col-span-5 h-[520px] relative rounded-2xl overflow-hidden shadow-sm ring-1 ring-slate-200 bg-slate-900 hidden lg:block lg:order-1">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT2nmOFoxr_csN3d2hzTh8cGm7eIMU9hr0G1-XgG-c7iltTFEaELFI9OlbXHpvIFeKN5THfKd9BAUn9FmI" alt="Secure hazardous and container transport" class="absolute inset-0 h-full w-full object-cover object-center opacity-90 transition-transform duration-500 hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6 text-white">
+          <span class="text-xs font-semibold uppercase tracking-wider text-rose-400">Strict Compliance</span>
+          <p class="text-lg font-medium mt-1">Certified handling, packaging verification, and regulatory support for hazardous freight.</p>
+        </div>
+      </div>
+
+      <!-- Row 2, Right: Dangerous Goods Card (Span 7) -->
+      <article class="spotlight fade-up relative flex flex-col justify-between rounded-2xl bg-white p-8 lg:p-10 shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-md lg:col-span-7 lg:order-2">
+        <div class="absolute top-0 left-8 right-8 h-1 bg-rose-600 rounded-t-xl"></div>
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-rose-50 text-rose-600 ring-1 ring-rose-500/20">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M5.07 19h13.86c1.54 0 2.5-1.67 1.73-3L13.73 4c-.77-1.33-2.69-1.33-3.46 0L3.34 16c-.77 1.33.19 3 1.73 3Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="badge badge-rose text-xs font-semibold px-3 py-1 rounded-full bg-rose-50 text-rose-700">Certified Compliant</span>
+          </div>
+          <h3 class="mt-8 text-2xl font-semibold tracking-tight text-ink h-display">Dangerous Goods Logistics</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink/70">Compliant handling and transportation of Dangerous Goods across air, sea and road freight — in accordance with international standards.</p>
+          
+          <div class="mt-8 border-t border-slate-100 pt-6">
+            <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-400">DG Capabilities</h4>
+            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-ink/80">
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> Cargo Classification</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> Packaging Verification</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> DG Documentation</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> Specialized Transport</li>
+              <li class="flex items-center gap-2 sm:col-span-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> IATA, IMDG &amp; ADR Compliance</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> Regulatory Support</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> Customs Clearance</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-rose-600"></span> Storage Coordination</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-4">
+          <a href="#quote" class="inline-flex items-center gap-2 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors">
+            Inquire about DG <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ======================= ABOUT ======================= -->
     <section id="about" class="scroll-mt-20 overflow-hidden bg-white py-24 sm:py-28">
       <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
         <div class="relative fade-up">
           <div class="relative overflow-hidden rounded-3xl bg-navy-950 shadow-soft">
             <img class="h-[520px] w-full object-cover opacity-90" src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=85" alt="Freight containers and logistics operations">
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/15 bg-navy-950/80 p-5 backdrop-blur">
-              <p class="text-xs font-bold uppercase tracking-[0.18em] text-orange-400">Local knowledge. Global reach.</p>
+              <p class="text-[11px] font-bold uppercase tracking-[0.18em] text-ember">Local knowledge. Global reach.</p>
               <p class="mt-2 text-sm leading-6 text-slate-300">A Windhoek-based team focused on making regional and international freight operations easier to manage.</p>
             </div>
           </div>
-          <div class="absolute -right-5 -top-5 h-28 w-28 rounded-full bg-orange-500/20 blur-2xl"></div>
+          <div class="absolute -right-5 -top-5 h-28 w-28 rounded-full bg-ember/20 blur-2xl"></div>
         </div>
 
         <div class="fade-up">
-          <p class="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-orange-600">Why Khomas Freight</p>
-          <h2 class="text-3xl font-extrabold tracking-tight text-navy-950 sm:text-4xl">Built on reliability, expertise, and full transparency.</h2>
-          <p class="mt-5 text-base leading-7 text-slate-600">We bring practical regional knowledge to complex logistics challenges, keeping every shipment clear, coordinated, and accountable from the first brief to final delivery.</p>
+          <p class="eyebrow">Why Khomas Freight</p>
+          <h2 class="h-display h-display--lg mt-3 text-ink">Built on reliability, expertise, and full transparency.</h2>
+          <p class="mt-5 text-base leading-7 text-ink/70">
+            Established over two decades ago, Khomas Freight Services has built a stellar reputation as a trusted, innovative, and highly responsive logistics partner.
+            <br><br>
+            Based in Namibia, we specialize in customs clearing, freight forwarding, and end-to-end logistics services.
+            <br><br>
+            With 20+ years of experience, we bring a deep understanding of local and international trade dynamics, ensuring your cargo moves safely, swiftly, and compliantly - no matter how complex or sensitive.
+          </p>
 
           <div class="mt-9 space-y-5">
             <div class="flex gap-4">
-              <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-orange-50 text-orange-600"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <div><h3 class="font-bold text-navy-950">Reliability you can build on</h3><p class="mt-1 text-sm leading-6 text-slate-600">Proactive coordination, clear communication, and dependable handling at every stage.</p></div>
+              <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-ember/10 text-ember"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div><h3 class="font-bold text-ink">20+ years in Namibian logistics</h3><p class="mt-1 text-sm leading-6 text-ink/70">Proactive coordination, clear communication, and dependable handling at every stage.</p></div>
             </div>
             <div class="flex gap-4">
               <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blue-50 text-blue-600"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span>
-              <div><h3 class="font-bold text-navy-950">Regional expertise in Windhoek</h3><p class="mt-1 text-sm leading-6 text-slate-600">Local insight across Namibia and the South African freight corridor.</p></div>
+              <div><h3 class="font-bold text-ink">We know the Namibian border</h3><p class="mt-1 text-sm leading-6 text-ink/70">Local insight across Namibia and the South African freight corridor.</p></div>
             </div>
             <div class="flex gap-4">
               <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-600"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
-              <div><h3 class="font-bold text-navy-950">Efficient transit times</h3><p class="mt-1 text-sm leading-6 text-slate-600">Practical routing and coordination designed to reduce avoidable delays.</p></div>
+              <div><h3 class="font-bold text-ink">24/7 — including weekends and public holidays</h3><p class="mt-1 text-sm leading-6 text-ink/70">Practical routing and coordination designed to reduce avoidable delays.</p></div>
             </div>
             <div class="flex gap-4">
               <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-violet-50 text-violet-600"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4V5Zm4 4h8m-8 4h8m-8 4h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
-              <div><h3 class="font-bold text-navy-950">End-to-end transparency</h3><p class="mt-1 text-sm leading-6 text-slate-600">Clear milestones, documentation status, and informed updates throughout.</p></div>
+              <div><h3 class="font-bold text-ink">Dangerous Goods certified</h3><p class="mt-1 text-sm leading-6 text-ink/70">Clear milestones, documentation status, and informed updates throughout.</p></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Regional Lanes Section -->
-    
+    <!-- ======================= LANES ======================= -->
+    <section id="lanes" class="scroll-mt-20 bg-paper py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <p class="eyebrow">Connectivity</p>
+          <h2 class="h-display h-display--lg mt-3 text-ink">Key regional trade corridors</h2>
+          <p class="mt-3 text-ink/70">Connecting Windhoek seamlessly with major hubs across Southern Africa and beyond.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="lane-card fade-up">
+            <h3 class="text-lg font-bold text-ink">South Africa Corridor</h3>
+            <p class="mt-2 text-sm leading-6 text-ink/70">Regular FTL &amp; LTL movements between Johannesburg, Cape Town, and Windhoek via major border posts.</p>
+          </div>
+          <div class="lane-card fade-up">
+            <h3 class="text-lg font-bold text-ink">Walvis Bay Maritime Link</h3>
+            <p class="mt-2 text-sm leading-6 text-ink/70">Efficient port clearance and container haulage linking international seafreight directly to inland destinations.</p>
+          </div>
+          <div class="lane-card fade-up">
+            <h3 class="text-lg font-bold text-ink">SADC Cross-Border</h3>
+            <p class="mt-2 text-sm leading-6 text-ink/70">Comprehensive documentation and transit support extending throughout neighboring SADC nations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Quote Section -->
-    <section id="quote" class="scroll-mt-20 bg-slate-50 py-24 sm:py-28">
+    <!-- ======================= TESTIMONIAL ======================= -->
+    <section class="bg-white py-24 sm:py-28">
+      <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
+        <svg class="mx-auto h-10 w-10 text-ember/30" viewBox="0 0 24 24" fill="currentColor"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
+        <blockquote class="mt-6 h-display text-2xl leading-snug text-ink sm:text-3xl">
+          "When our shipment couldn't wait, Khomas didn't either. They had it cleared and moving within hours."
+        </blockquote>
+        <div class="mt-6 text-sm text-ink/70">
+          <strong class="text-ink">Procurement Lead</strong> · Oil &amp; Operations Manager, Walvis Bay
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= QUOTE ======================= -->
+    <section id="quote" class="scroll-mt-20 bg-paper py-24 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 lg:px-8">
         <div class="grid overflow-hidden rounded-3xl bg-white shadow-soft lg:grid-cols-[.85fr_1.15fr]">
           <div class="relative overflow-hidden bg-gradient-to-br from-navy-950 to-navy-800 p-8 text-white sm:p-12">
-            <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-orange-500/20 blur-3xl"></div>
+            <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-ember/20 blur-3xl"></div>
             <div class="relative">
-              <p class="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-orange-400">Quick quote</p>
-              <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Tell us where your cargo needs to go.</h2>
-              <p class="mt-5 max-w-md leading-7 text-slate-300">Share a few shipment details and our team will review your request and respond with the next steps.</p>
+              <p class="eyebrow eyebrow--light">Quick quote</p>
+              <h2 class="h-display mt-3 text-3xl text-white sm:text-4xl">Tell us where your cargo needs to go.</h2>
+              <p class="mt-5 max-w-md leading-7 text-slate-300">Share a few shipment details and our team will review your request and respond with next steps.</p>
               <div class="mt-10 space-y-5 border-t border-white/15 pt-8">
-                <div class="flex items-center gap-4"><span class="grid h-10 w-10 place-items-center rounded-lg bg-white/10 text-orange-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4V5Zm0 4 8 5 8-5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><strong class="block text-sm">Fast response</strong><span class="text-xs text-slate-400">Your request is reviewed by our team</span></div></div>
-                <div class="flex items-center gap-4"><span class="grid h-10 w-10 place-items-center rounded-lg bg-white/10 text-orange-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong class="block text-sm">Regional guidance</strong><span class="text-xs text-slate-400">Clear insight for South Africa &amp; Namibia</span></div></div>
+                <div class="flex items-center gap-4"><span class="grid h-10 w-10 place-items-center rounded-lg bg-white/10 text-ember"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4V5Zm0 4 8 5 8-5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><div><strong class="block text-sm">Fast response</strong><span class="text-xs text-slate-400">Reviewed by our team</span></div></div>
+                <div class="flex items-center gap-4"><span class="grid h-10 w-10 place-items-center rounded-lg bg-white/10 text-ember"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></span><div><strong class="block text-sm">Regional guidance</strong><span class="text-xs text-slate-400">South Africa &amp; Namibia corridors</span></div></div>
               </div>
             </div>
           </div>
 
           <form id="quoteForm" action="https://formspree.io/f/xkjogbra" method="POST" class="p-7 sm:p-10 lg:p-12" novalidate>
+            <div id="formSummary" class="hidden mb-6 rounded-xl border border-red-200 bg-red-50 p-4 text-sm leading-6 text-red-800" role="alert"></div>
+
             <div class="grid gap-5 sm:grid-cols-2">
               <div>
-                <label for="name" class="mb-2 block text-sm font-semibold text-navy-950">Full name <span class="text-orange-600">*</span></label>
-                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" class="w-full rounded-lg border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy-950 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10">
-                <p id="nameError" class="mt-1 hidden text-xs text-red-600">Please enter your name.</p>
+                <label for="name" class="form-label">Full name <span class="text-ember" aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" class="form-input">
+                <p id="nameError" class="form-error hidden"></p>
               </div>
               <div>
-                <label for="email" class="mb-2 block text-sm font-semibold text-navy-950">Email address <span class="text-orange-600">*</span></label>
-                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="w-full rounded-lg border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy-950 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10">
-                <p id="emailError" class="mt-1 hidden text-xs text-red-600">Please enter a valid email.</p>
+                <label for="email" class="form-label">Email address <span class="text-ember" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="form-input">
+                <p id="emailError" class="form-error hidden"></p>
               </div>
               <div>
-                <label for="phone" class="mb-2 block text-sm font-semibold text-navy-950">Phone number <span class="text-orange-600">*</span></label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+264 000 000 000" class="w-full rounded-lg border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy-950 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10">
-                <p id="phoneError" class="mt-1 hidden text-xs text-red-600">Please enter your phone number.</p>
+                <label for="phone" class="form-label">Phone number <span class="text-ember" aria-hidden="true">*</span></label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+264 000 000 000" class="form-input">
+                <p id="phoneError" class="form-error hidden"></p>
               </div>
               <div>
-                <label for="shipmentType" class="mb-2 block text-sm font-semibold text-navy-950">Shipment type <span class="text-orange-600">*</span></label>
-                <select id="shipmentType" name="shipmentType" required class="w-full appearance-none rounded-lg border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy-950 outline-none transition focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10">
+                <label for="shipmentType" class="form-label">Shipment type <span class="text-ember" aria-hidden="true">*</span></label>
+                <select id="shipmentType" name="shipmentType" required class="form-input appearance-none bg-no-repeat" style="background-image: url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2364748b'><path d='M5.5 7.5 10 12l4.5-4.5' stroke='currentColor' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>&quot;); background-position: right 1rem center; background-size: 1.1rem;">
                   <option value="">Select shipment type</option>
                   <option value="Import">Import</option>
                   <option value="Export">Export</option>
                   <option value="Cross-border freight">Cross-border freight</option>
                   <option value="Customs documentation">Customs documentation</option>
+                  <option value="Dangerous goods">Dangerous goods</option>
                 </select>
-                <p id="shipmentTypeError" class="mt-1 hidden text-xs text-red-600">Please select a shipment type.</p>
+                <p id="shipmentTypeError" class="form-error hidden"></p>
               </div>
               <div class="sm:col-span-2">
-                <label for="route" class="mb-2 block text-sm font-semibold text-navy-950">Origin / destination <span class="text-orange-600">*</span></label>
-                <input id="route" name="route" type="text" required placeholder="e.g. South Africa to Windhoek, Namibia" class="w-full rounded-lg border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy-950 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10">
-                <p id="routeError" class="mt-1 hidden text-xs text-red-600">Please enter the origin and destination.</p>
+                <label for="route" class="form-label">Origin / destination <span class="text-ember" aria-hidden="true">*</span></label>
+                <input id="route" name="route" type="text" required placeholder="e.g. South Africa to Windhoek, Namibia" class="form-input">
+                <p id="routeError" class="form-error hidden"></p>
               </div>
               <div class="sm:col-span-2">
-                <label for="message" class="mb-2 block text-sm font-semibold text-navy-950">Additional details <span class="font-normal text-slate-400">(optional)</span></label>
-                <textarea id="message" name="message" rows="4" placeholder="Cargo description, dimensions, pickup date, or other details" class="w-full resize-none rounded-lg border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy-950 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10"></textarea>
+                <label for="message" class="form-label">Additional details <span class="font-normal text-slate-400">(optional)</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="Cargo description, dimensions, pickup date, or other details" class="form-input resize-none"></textarea>
               </div>
             </div>
-            <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-orange-500 px-6 py-4 text-sm font-bold text-white shadow-lg shadow-orange-500/20 transition hover:-translate-y-0.5 hover:bg-orange-600 focus:outline-none focus:ring-4 focus:ring-orange-500/20">
-              Submit Quote Request
-              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            <button type="submit" class="btn btn-primary mt-6 w-full" data-submit-btn>
+              <span class="btn-label">Submit Quote Request</span>
+              <svg class="btn-spinner hidden h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-opacity=".25" stroke-width="3"/><path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+              <svg class="btn-check hidden h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
+
             <div id="formSuccess" class="mt-5 hidden rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm leading-6 text-emerald-800" role="status" aria-live="polite">
               <strong class="block">Thank you for your request.</strong>
-              Your quote details have been received. Our team will contact you shortly.
+              Your details have been received. Our team will contact you shortly.
             </div>
             <p class="mt-4 text-center text-xs leading-5 text-slate-500">By submitting this form, you agree to be contacted regarding your logistics request.</p>
           </form>
@@ -367,13 +624,14 @@
     </section>
   </main>
 
+  <!-- ======================= FOOTER ======================= -->
   <footer id="contact" class="scroll-mt-20 bg-navy-950 text-white">
     <div class="mx-auto max-w-7xl px-5 py-16 lg:px-8">
       <div class="grid gap-12 border-b border-white/10 pb-12 md:grid-cols-2 lg:grid-cols-[1.3fr_.8fr_.8fr_1fr]">
         <div>
           <a href="#home" class="inline-flex items-center gap-3" aria-label="Khomas Freight Services home">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-orange-500"><svg class="h-7 w-7 text-white" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 19.5h22M8 19.5l2.7-7h10.6l2.7 7M11 19.5v5m10-5v5M9 24.5h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 12.5 16 8l2 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            <span class="leading-tight"><strong class="block text-[15px] font-extrabold tracking-wide">KHOMAS</strong><span class="block text-[9px] font-semibold uppercase tracking-[0.22em] text-orange-400">Freight Services</span></span>
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-ember"><svg class="h-7 w-7 text-white" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 19.5h22M8 19.5l2.7-7h10.6l2.7 7M11 19.5v5m10-5v5M9 24.5h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 12.5 16 8l2 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="leading-tight"><strong class="block text-[15px] font-extrabold tracking-wide">KHOMAS</strong><span class="block text-[9px] font-semibold uppercase tracking-[0.22em] text-ember">Freight Services</span></span>
           </a>
           <p class="mt-5 max-w-sm text-sm leading-6 text-slate-400">Reliable regional and international freight forwarding, customs documentation, and supply chain support from Windhoek, Namibia.</p>
         </div>
@@ -381,18 +639,18 @@
         <div>
           <h3 class="text-sm font-bold uppercase tracking-wider text-white">Quick links</h3>
           <ul class="mt-5 space-y-3 text-sm text-slate-400">
-            <li><a class="transition hover:text-orange-400" href="#home">Home</a></li>
-            <li><a class="transition hover:text-orange-400" href="#services">Services</a></li>
-            <li><a class="transition hover:text-orange-400" href="#about">About us</a></li>
-            <li><a class="transition hover:text-orange-400" href="#lanes">Import / Export lanes</a></li>
+            <li><a class="transition hover:text-ember" href="#home">Home</a></li>
+            <li><a class="transition hover:text-ember" href="#services">Services</a></li>
+            <li><a class="transition hover:text-ember" href="#about">About us</a></li>
+            <li><a class="transition hover:text-ember" href="#lanes">Import / Export lanes</a></li>
           </ul>
         </div>
 
         <div>
           <h3 class="text-sm font-bold uppercase tracking-wider text-white">Contact</h3>
           <ul class="mt-5 space-y-4 text-sm text-slate-400">
-            <li class="flex gap-3"><svg class="mt-0.5 h-4 w-4 shrink-0 text-orange-400" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg><span>Windhoek, Namibia<br>P.O. Box 2096</span></li>
-            <li><a class="transition hover:text-orange-400" href="mailto:info@khomasfreight.com">info@khomasfreight.com</a></li>
+            <li class="flex gap-3"><svg class="mt-0.5 h-4 w-4 shrink-0 text-ember" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.1 7-12a7 7 0 1 0-14 0c0 6.9 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg><span>Windhoek, Namibia<br>P.O. Box 2096</span></li>
+            <li><a class="transition hover:text-ember" href="mailto:info@khomasfreight.com">info@khomasfreight.com</a></li>
           </ul>
         </div>
 
